@@ -37,9 +37,7 @@ body {
   margin-bottom: 100px;
 }
 
-.header--nav--item {
-  background-color: var(--main-bg-color);
-}
+
 
 .header--nav--item--link {
   text-decoration: none;
