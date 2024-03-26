@@ -1,0 +1,171 @@
+:root {
+  --main-bg-color: #fefae0;
+  --main-text-color: #bc6c25;
+  --main-cta-bg-color: #283618;
+  --secondary-cta-bg-color: #606c38;
+  --main-cta-text-color: #dda15e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+/* Header section */
+
+.header--container {
+  text-align: center;
+}
+
+.header--title {
+  margin-bottom: 50px;
+}
+
+.header--nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+  margin: 20px;
+  margin-bottom: 100px;
+}
+
+.header--nav--item {
+  background-color: var(--main-bg-color);
+}
+
+.header--nav--item--link {
+  text-decoration: none;
+  background-color: var(--main-cta-bg-color);
+  color: var(--main-cta-text-color);
+  padding: 15px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 10px;
+}
+
+.header--nav--item--link:hover {
+  box-shadow: none;
+  transition: 1s;
+  padding: 20px;
+  font-size: larger;
+}
+
+/* Mission statement section */
+
+.mission--container {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.mission--title {
+  margin-bottom: 50px;
+}
+
+/* Portfolio section */
+
+.portfolio--container,
+.team--container {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  gap: 35px;
+  justify-content: center;
+  margin: auto 40px;
+}
+
+.portfolio--gallery,
+.team--gallery {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 60px;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.portfolio--card,
+.team--card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 500px;
+}
+
+.portfolio--card--img,
+.team--card--img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.portfolio--card p,
+.team--card p {
+  font-size: 30px;
+  color: var(--main-cta-bg-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* Team section */
+
+/* team section shares a lot of styles with portfolio section*/
+
+.team--container {
+  margin: 100px auto;
+}
+
+/* Footer section */
+
+.footer--section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 50px auto;
+}
+
+/* Typography */
+
+h1 {
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-weight: 2rem;
+}
+
+p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-shadow: 0px 0px 0px;
+}
+
+/* Colours */
+
+h1,
+h2,
+h3 {
+  color: var(--main-text-color);
+}
+
+p {
+  color: var(--secondary-cta-bg-color);
+}
